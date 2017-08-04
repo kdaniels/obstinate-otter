@@ -1,0 +1,11 @@
+language: java
+sudo: false
+jdk:
+- openjdk6
+- openjdk7
+install:
+  - echo $PATH
+script:
+  - echo $PATH
+deploy:
+  - echo $PATH
