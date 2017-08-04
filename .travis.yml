@@ -7,5 +7,3 @@ install:
   - echo $PATH
 script:
   - echo $PATH
-deploy:
-  - echo $PATH
