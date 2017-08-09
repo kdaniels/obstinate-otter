@@ -1,5 +1,5 @@
-os: osx
-osx_image: xcode6.4
+os: macos
+osx_image: beta-xcode6.1
 language: generic
 install:
   - ls
