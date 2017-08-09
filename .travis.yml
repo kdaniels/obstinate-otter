@@ -1,9 +1,7 @@
-os: osx
 language: java
 osx_image: beta-xcode6.1
 jdk:
 - openjdk6
-- openjdk7
 install:
   - echo $PATH
 script:
