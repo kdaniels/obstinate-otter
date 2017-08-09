@@ -1,4 +1,5 @@
 language: java
+os: osx
 osx_image: beta-xcode6.1
 jdk:
 - openjdk6
