@@ -1,5 +1,5 @@
 language: java
-sudo: false
+osx_image: beta-xcode6.1
 jdk:
 - openjdk6
 - openjdk7
