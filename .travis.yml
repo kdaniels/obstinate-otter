@@ -1,10 +1,7 @@
-matrix:
-  include:
-    - os: osx
-      osx_image: beta-xcode6.1
-      language: generic
-      env: OSX=OSX10.10
+os: osx
+osx_image: beta-xcode6.1
+language: generic
 install:
-  - echo $PATH
+  - ls
 script:
-  - echo $PATH
+  - ls
