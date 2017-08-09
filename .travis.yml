@@ -1,6 +1,5 @@
 os: osx
-language: generic
-install:
-  - ls
+osx_image: beta-xcode6.1
+language: objective-c
 script:
   - ls
