@@ -1,6 +1,6 @@
 os: osx
 osx_image: beta-xcode6.1
-lang: swift
+language: objective-c
 install:
   - echo $PATH
 script:
