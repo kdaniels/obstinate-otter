@@ -2,4 +2,4 @@ os: osx
 osx_image: beta-xcode6.1
 language: objective-c
 script:
-  - ls
+  - pwd
