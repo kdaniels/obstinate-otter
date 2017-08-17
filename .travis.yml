@@ -1,5 +1,15 @@
-os: osx
-osx_image: beta-xcode6.4
-language: generic
+sudo: required
+dist: trusty
+group: edge
+
+matrix:
+  include:
+    - env: image=garnet
+      language: __garnet__
+    - env: image=amethyst
+      language: __amethyst__
+    - env: image=sugilite
+      language: __sugilite__
+
 script:
   - uname -r
