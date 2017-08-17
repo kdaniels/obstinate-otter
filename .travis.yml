@@ -1,5 +1,5 @@
-os: macos
-osx_image: beta-xcode6.1
+os: osx
+osx_image: xcode6.4
 language: generic
 script:
   - uname -r
