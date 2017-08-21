@@ -1,19 +1,5 @@
-sudo: false
-
-services:
-  - docker
-
-language: java
-
-jdk:
-  - openjdk6
-  - openjdk7
-
+os: osx
+osx_image: beta-xcode6.3
+language: objective-c
 script:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-
-before_install:
-  - wget https://archive.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.zip
-  - unzip -qq apache-maven-3.1.1-bin.zip
-  - export M2_HOME=$PWD/apache-maven-3.1.1
-  - export PATH=$M2_HOME/bin:$PATH
+  - pwd
