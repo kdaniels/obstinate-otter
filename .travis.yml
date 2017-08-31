@@ -1,5 +1,6 @@
-os: osx
-osx_image: beta-xcode6.3
-language: objective-c
+language: ruby
+sudo: required
+install:
+  - sudo apt install linux-generic-hwe-16.04
 script:
-  - pwd
+  - uname -a
