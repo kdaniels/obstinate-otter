@@ -1,6 +1,6 @@
 language: ruby
 sudo: required
-install:
-  - sudo apt install linux-generic-hwe-16.04
+node_js:
+  - "5"
 script:
-  - uname -a
+  - node -v
