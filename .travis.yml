@@ -1,10 +1,7 @@
 language: ruby
 sudo: required
-addons:
-  apt:
-    packages:
-      - nodejs
-node_js:
-  - "5"
+install:
+  - nvm install 7.1.0
+  - nvm use 7.1.0
 script:
   - node -v
