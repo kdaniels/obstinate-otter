@@ -2,7 +2,8 @@ language: ruby
 sudo: required
 addons:
   apt:
-    nodejs
+    packages:
+      - nodejs
 node_js:
   - "5"
 script:
