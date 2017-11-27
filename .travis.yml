@@ -1,7 +1,12 @@
-language: ruby
-sudo: required
-install:
-  - nvm install 7.1.0
-  - nvm use 7.1.0
+language: shell
+sudo: false
+dist: trusty
 script:
-  - node -v
+  - echo "cats"
+addons:
+  apt:
+    sources:
+    - debian-sid
+    packages:
+    - shellcheck
+    - zsh
