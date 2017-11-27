@@ -1,6 +1,8 @@
 language: shell
 sudo: false
 dist: trusty
+before_install:
+  - apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7638D0442B90D010
 script:
   - echo "cats"
 addons:
