@@ -4,5 +4,5 @@ dist: trusty
 group: stable
 os: linux
 script:
-  - echo "cats"
+  - echo "docker"
 
