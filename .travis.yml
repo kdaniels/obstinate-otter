@@ -1,7 +1,7 @@
 os: osx
-language: swift
-osx_image: xcode9.1
+language: generic
+sudo: required
 script:
   - echo "cats"
-  - set -o pipefail
+  - pip
 
