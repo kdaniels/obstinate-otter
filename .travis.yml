@@ -1,8 +1,10 @@
-language: ruby
+language: python
+python: 3.7.0a2
 sudo: false
 dist: trusty
 group: stable
 os: linux
 script:
-  - echo "dockerby undockerize dockerrrr"
+  - echo "cats"
+  - python --version
 
