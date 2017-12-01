@@ -3,4 +3,5 @@ language: swift
 osx_image: xcode9.1
 script:
   - echo "cats"
+  - set -o pipefail
 
