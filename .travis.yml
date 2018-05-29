@@ -1,7 +1,5 @@
-os: osx
+os: linux
 language: generic
 sudo: required
 script:
   - echo "cats"
-  - pip
-
