@@ -1,5 +1,22 @@
 os: linux
 language: generic
 sudo: required
+addons:
+  apt:
+    sources: &common_sources
+      - deadsnakes
+    packages: &common_packages
+      - cmake
+      - time
 script:
   - echo "cats"
+jobs:
+  include:
+    - addons:
+      apt:
+        sources:
+          - *common_sources
+          - sourceline: 'ppa:ubuntu-toolchain-r/test'
+        packages:
+          - *common_packages
+          - cowsay
