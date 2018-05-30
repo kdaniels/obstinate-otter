@@ -16,6 +16,7 @@ script:
   - echo "yay"
 after_script:
   - cat /etc/apt/sources.list
+  - cowsay "whee"
 jobs:
   include:
     - addons:
@@ -25,20 +26,17 @@ jobs:
           - sourceline: 'ppa:ubuntu-toolchain-r/test'
           - gammu
         packages:
-          - *common_packages
+          - cowsay
     - addons:
       apt:
         sources:
-           - *common_sources
+           - gammu
         packages:
            - *common_packages
-           - gcc-4.8
-           - varnish
+           - cowsay
     - addons:
       apt:
         sources:
           - gammu
         packages:
           - cowsay
-    after_install:
-      - cowsay "yay"
