@@ -20,3 +20,11 @@ jobs:
         packages:
           - *common_packages
           - cowsay
+    - addons:
+      apt:
+        sources:
+           - *common_sources
+        packages:
+           - *common_packages
+           - gcc-4.8
+           - varnish
