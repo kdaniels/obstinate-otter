@@ -26,7 +26,6 @@ jobs:
           - gammu
         packages:
           - *common_packages
-          - cowsay
     - addons:
       apt:
         sources:
