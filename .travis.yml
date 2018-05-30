@@ -13,6 +13,9 @@ script:
   - echo "cats"
   - cat /etc/apt/sources.list
   - ls /etc/apt/sources.list.d/
+  - echo "yay"
+after_script:
+  - cat /etc/apt/sources.list
 jobs:
   include:
     - addons:
