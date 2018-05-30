@@ -11,6 +11,7 @@ addons:
 script:
   - echo "cats"
   - cat /etc/apt/sources.list
+  - ls /etc/apt/sources.d
 jobs:
   include:
     - addons:
