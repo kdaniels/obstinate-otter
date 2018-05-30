@@ -5,6 +5,7 @@ addons:
   apt:
     sources: &common_sources
       - deadsnakes
+      - sourceline: 'ppa:kalakris/cmake'
     packages: &common_packages
       - cmake
       - time
