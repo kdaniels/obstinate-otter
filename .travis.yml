@@ -35,3 +35,11 @@ jobs:
            - *common_packages
            - gcc-4.8
            - varnish
+    - addons:
+      apt:
+        sources:
+          - gammu
+        packages:
+          - cowsay
+    after_install:
+      - cowsay "yay"
