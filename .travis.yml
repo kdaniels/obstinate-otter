@@ -20,6 +20,7 @@ jobs:
         sources:
           - *common_sources
           - sourceline: 'ppa:ubuntu-toolchain-r/test'
+          - gammu
         packages:
           - *common_packages
           - cowsay
