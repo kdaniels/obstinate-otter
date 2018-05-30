@@ -10,6 +10,7 @@ addons:
       - time
 script:
   - echo "cats"
+  - cat /etc/apt/sources.list
 jobs:
   include:
     - addons:
