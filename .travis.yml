@@ -4,7 +4,7 @@ sudo: required
 addons:
   apt:
     sources: &common_sources
-      - sourceline: 'deb http://packages.couchbase.com/ubuntu trusty main'
+      - ubuntu-toolchain-r-test
     packages: &common_packages
       - fortune
 script:
@@ -28,7 +28,7 @@ jobs:
     - addons:
         apt:
           sources:
-            - gammu
+            - *common_sources
           packages:
             - *common_packages
             - cowsay
