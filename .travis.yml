@@ -11,8 +11,7 @@ addons:
       - fortune
 script:
   - echo "cats"
-  - cat /etc/apt/sources.list
-  - ls /etc/apt/sources.list.d/
+  - cat ~/build.sh
   - echo "yay"
 after_script:
   - cat /etc/apt/sources.list
