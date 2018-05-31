@@ -5,6 +5,7 @@ addons:
   apt:
     sources: &common_sources
       - ubuntu-toolchain-r-test
+      - lucid
     packages: &common_packages
       - fortune
 script:
