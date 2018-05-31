@@ -4,11 +4,9 @@ sudo: required
 addons:
   apt:
     sources: &common_sources
-      - deadsnakes
-      - sourceline: 'ppa:kalakris/cmake'
+      - sourceline: 'deb http://packages.couchbase.com/ubuntu precise precise/main'
     packages: &common_packages
-      - cmake
-      - time
+      - fortune
 script:
   - echo "cats"
   - cat /etc/apt/sources.list
@@ -16,15 +14,15 @@ script:
   - echo "yay"
 after_script:
   - cat /etc/apt/sources.list
-  - cowsay "whee"
+  - export PATH=$PATH:/usr/games
+  - fortune -s | cowsay
 jobs:
   include:
     - addons:
         apt:
           sources:
             - *common_sources
-            - sourceline: 'ppa:ubuntu-toolchain-r/test'
-            - gammu
+            - sourceline: 'deb https://packages.chef.io/repos/apt/stable trusty main'
           packages:
             - cowsay
     - addons:
