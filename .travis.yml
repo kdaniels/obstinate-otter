@@ -37,6 +37,6 @@ jobs:
     - addons:
         apt:
           sources:
-            - gammu
+            - sourceline: 'deb https://packages.chef.io/repos/apt/stable trusty main'
           packages:
             - cowsay
