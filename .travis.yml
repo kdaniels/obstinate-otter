@@ -4,7 +4,7 @@ sudo: required
 addons:
   apt:
     sources: &common_sources
-      - sourceline: 'deb http://packages.couchbase.com/ubuntu precise precise/main'
+      - sourceline: 'deb http://packages.couchbase.com/ubuntu trusty main'
     packages: &common_packages
       - fortune
 script:
