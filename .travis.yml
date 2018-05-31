@@ -20,23 +20,23 @@ after_script:
 jobs:
   include:
     - addons:
-      apt:
-        sources:
-          - *common_sources
-          - sourceline: 'ppa:ubuntu-toolchain-r/test'
-          - gammu
-        packages:
-          - cowsay
+        apt:
+          sources:
+            - *common_sources
+            - sourceline: 'ppa:ubuntu-toolchain-r/test'
+            - gammu
+          packages:
+            - cowsay
     - addons:
-      apt:
-        sources:
-           - gammu
-        packages:
-           - *common_packages
-           - cowsay
+        apt:
+          sources:
+            - gammu
+          packages:
+            - *common_packages
+            - cowsay
     - addons:
-      apt:
-        sources:
-          - gammu
-        packages:
-          - cowsay
+        apt:
+          sources:
+            - gammu
+          packages:
+            - cowsay
