@@ -6,12 +6,11 @@ addons:
     sources: &common_sources
       - ubuntu-toolchain-r-test
       - lucid
-      - sourceline: 'deb https://packages.chef.io/repos/apt/stable trusty main'
     packages: &common_packages
       - fortune
 script:
   - echo "cats"
-  - cat ~/build.sh
+  - printenv TRAVIS_BUILD_APT_SOURCE_WHITELIST_TRUSTY
   - echo "yay"
 after_script:
   - cat /etc/apt/sources.list
