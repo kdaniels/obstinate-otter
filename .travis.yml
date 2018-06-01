@@ -10,7 +10,6 @@ addons:
       - fortune
 script:
   - echo "cats"
-  - printenv TRAVIS_BUILD_APT_SOURCE_WHITELIST_TRUSTY
   - echo "yay"
 after_script:
   - cat /etc/apt/sources.list
