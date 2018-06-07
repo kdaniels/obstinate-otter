@@ -1,39 +1,5 @@
-os: linux
-language: generic
-sudo: required
-addons:
-  apt:
-    sources: &common_sources
-      - ubuntu-toolchain-r-test
-      - lucid
-    packages: &common_packages
-      - fortune
+os: osx
+language: objective-c
+osx_image: xcode9.4beta
 script:
   - echo "cats"
-  - echo "yay"
-after_script:
-  - cat /etc/apt/sources.list
-  - export PATH=$PATH:/usr/games
-  - fortune -s | cowsay
-jobs:
-  include:
-    - addons:
-        apt:
-          sources:
-            - *common_sources
-            - sourceline: 'deb https://packages.chef.io/repos/apt/stable trusty main'
-          packages:
-            - cowsay
-    - addons:
-        apt:
-          sources:
-            - *common_sources
-          packages:
-            - *common_packages
-            - cowsay
-    - addons:
-        apt:
-          sources:
-            - sourceline: 'deb https://packages.chef.io/repos/apt/stable trusty main'
-          packages:
-            - cowsay
