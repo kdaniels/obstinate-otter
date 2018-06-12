@@ -1,10 +1,9 @@
 os: osx
 language: objective-c
-osx_image: xcode9.4-beta
+osx_image: xcode9.3
 script:
   - echo "cats"
-  - uname -a
-  - sw_vers
-  - xcodebuild -version
-  - xcrun simctl list
-  - xcrun simctl list pairs
+  - ls -al /usr/share
+  - ls -al /Users/travis
+  - echo $PATH
+  - env
