@@ -2,7 +2,7 @@ os: osx
 language: objective-c
 osx_image: xcode9.4-beta
 script:
-  - echo "cats are so good"
+  - echo "cats are so very good, quite excellent actually"
   - ls -al /usr/share
   - ls -al /Users/travis
   - echo $PATH
