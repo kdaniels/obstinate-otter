@@ -4,7 +4,7 @@ dist: trusty
 install:
 - echo "cats"
 script:
-- dd if=/dev/urandom of=release.txt bs=1024 count=2048576
+  - dd if=/dev/urandom of=release.txt bs=1024 count=3548576
 notifications:
   email: never
 deploy:
