@@ -1,7 +1,8 @@
 language: android
 sudo: required
 dist: precise
-install: true
+install:
+- echo "cats"
 script:
 - dd if=/dev/urandom of=release.txt bs=1250M count=1000
 notifications:
