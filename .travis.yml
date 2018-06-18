@@ -1,16 +1,15 @@
-os: osx
-language: objective-c
-osx_image: xcode9.4.1
+language: android
+sudo: required
+dist: precise
+install: true
 script:
-  - echo "cats are so very good, quite excellent actually"
-  - uname -a
-  - sw_vers
-  - xcodebuild -version
-  - xcrun simctl list
-  - xcrun simctl list pairs
-  - df -h /
-  - brew list --versions
-  - brew cask list --versions
-  - nvm list
-  - rvm list
-  - pod --version
+- dd if=/dev/urandom of=release.txt bs=1250M count=1000
+notifications:
+  email: never
+deploy:
+  provider: releases
+  api_key:
+    secure: bnWTLjwnLl0NzrJ4Bh1XalqvCkxtHB2aibILxgPzk8NPccMsIMtLV9PhGC+B49GhRB0BNV7OCV0Fw27xRBCPIBcM50b3PWFPp+GzI1+6G+YQUpy8WBWTr6CAEAiUBk267aZOP1AL0M0XujrpoBw0CSYeRi5OUjfixMYMfpWywHMkInUTAfnjL18/4yITITL92ZpuuYt+Q3Z7AxCeIP3aE0RnZSUwjuKmoYZkXFrUfMPqDJkZ7OUd0uo+RrxUN5R4O2r3NmuEDBMWRkqFcB8B2MC2x0QdVsYy1kjee11ZV4Vzf6KX6E98lH6e9FsyBmcA/CU1OWtmy9CUlcTuCyjKgczEbkdrj5TookAAup0T6zFPQY74e67/0Gmy0Jj0yD+bdpm682ennOWi+VC3tHlBfMEZO9in2ljk5s6gzkcRcoKR9uQni5zm35gGOpbMs5qCqR6kjWS/DBHFBVfFwGpkV4Y5cEZVXASkLOBSTVZ7Bbi7py1FxKRiH/T6wvCpIWHX/+px6sgv/CdnUI666EaZ/sz4lyjDsBUOWu/T0SLEYW4jQrmUqaOfGRnBwn/dLA2Wn+DcfWPZYNB9p8NNZb8kkIcgRPB3aqbfQTh7NIHOMK6/7zzZHA2TiDVsxZWyKZxdSmqZpqCIvPnjyM1yozpb4Oor/by1wphIw30qLf0XCH0=
+  file: release.txt
+  on:
+    repo: ryndaniels/obstinate-otter
