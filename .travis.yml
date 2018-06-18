@@ -1,10 +1,10 @@
 language: android
 sudo: required
-dist: precise
+dist: trusty
 install:
 - echo "cats"
 script:
-- dd if=/dev/urandom of=release.txt bs=1024 count=1048576
+- dd if=/dev/urandom of=release.txt bs=1024 count=10485786
 notifications:
   email: never
 deploy:
