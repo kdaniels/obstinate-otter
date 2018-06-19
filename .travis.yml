@@ -1,4 +1,4 @@
-language: android
+language: ruby
 sudo: false
 dist: trusty
 install:
