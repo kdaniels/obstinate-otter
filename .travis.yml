@@ -2,7 +2,7 @@ language: ruby
 sudo: false
 dist: trusty
 install:
-- echo "cats"
+  - echo "cats 2: the cattening"
 script:
   - dd if=/dev/urandom of=release.txt bs=1024 count=4558576
 notifications:
